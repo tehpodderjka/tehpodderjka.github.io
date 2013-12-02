@@ -1,0 +1,72 @@
+
+body {
+		font-family: sans-serif;
+		background: #e7e3e2;
+		background: linear-gradient (#e7e3e2, #ebe1e2);
+}
+.container {
+				perspective: 1000;
+
+}
+
+.container:hover .flipper, .container.hover .flipper {
+				transform: rotateY(180deg);
+								
+}
+
+.container, .front, .back {
+				width: 700px;
+				height: 350px;
+				background: #f5efef;
+				background: linear-gradient (#f5efef, #f0f2ef);
+				margin: auto;
+				border-radius: 10px;
+				box-shadow: -1px 1px 5px rgba(0,0,0, .5);
+
+}
+
+.flipper {
+				transition: 0.6s;
+				transform-style: preserve-3d;
+				position: relative;
+}
+
+.front, .back {
+				backface-visibility: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+
+}
+
+.front {
+				z-index: 2;
+
+}
+
+.back {
+				transform: rotateY(180deg);
+
+}
+
+h1 {
+		text-indent: -9999px;
+		font-size: 80px;
+}
+h2, h3 {
+		text-align: center;
+		color: #616161;
+		padding: 60px;
+}
+
+h2 {
+		font-size: 25px;
+}
+
+h3 {
+		font-size: 20px;
+}
+
+.number {
+		text-align: center;
+}
