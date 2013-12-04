@@ -15,11 +15,14 @@ body {
 }
 
 .container, .front, .back {
-				width: 700px;
-				height: 350px;
+		width: 700px;
+		height: 350px;
+		margin: auto;
+}
+
+.front, .back {
 				background: #f5efef;
 				background: linear-gradient (#f5efef, #f0f2ef);
-				margin: auto;
 				border-radius: 10px;
 				box-shadow: -1px 1px 5px rgba(0,0,0, .5);
 
